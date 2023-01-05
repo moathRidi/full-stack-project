@@ -39,7 +39,7 @@ body .loading{
     width: 0;
     height: 100%;
     color: #E9ECEF  ;
-    -webkit-text-stroke: .1vw #E9ECEF;
+    -webkit-text-stroke: .2vw #E9ECEF;
     border-right: 2px solid rgb(78, 78, 164);
     overflow: hidden;
     animation: animate 3s linear infinite;
@@ -62,7 +62,7 @@ body .loading{
 .navbar{
     padding-top: 1%;
     font-weight: 500 !important;
-    font-size:14px
+    font-size:14px;
  }
  
 .navbar .navbar-nav .nav-item a.nav-link{
@@ -104,9 +104,11 @@ body .loading{
 }
 .navbar .navbar-nav .nav-item:nth-child(8) a.nav-link:hover i{
    color: #303e82;
+   transform: scale(1.1);
 }
 .navbar .navbar-nav .nav-item:nth-child(9) a.nav-link:hover i{
     color: #584ee4;
+    transform: scale(1.1);
  }
 
 
@@ -213,15 +215,15 @@ header .tr3{
 }
 
 .header .lap1{
-    top: 200px;
+    top: 266px;
     right: 8px;
     z-index: 5;
 }
 
 .header .lap3{
-    top: 212px;
-    right: 199px;
-      z-index: 5;
+    top: 282px;
+    right: 212px;
+    z-index: 5;
 }
 
 
@@ -268,14 +270,30 @@ header .tr3{
  
 .header h1{
     color: rgb(54, 54, 54);
-    transform: translateX(-50%);
+    
     left: 18.7%;
-    transform: translateY(120%);
+    top:200px;
     font-size:80px;
     font-weight: 800;
     position: relative;
     z-index: 5;
+    animation-name: contentLeft;
+    animation-duration: 1s;
+    /* transform: translate(-50%, -50%);
+  transition: all 1s; */
 }
+@keyframes contentLeft {
+
+    0%{
+        transform: translateX(-120%);
+         
+    }
+    
+   
+    
+}
+ 
+
 
 
 .reflection {

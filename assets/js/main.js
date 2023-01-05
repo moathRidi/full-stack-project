@@ -34,7 +34,14 @@ window.addEventListener('scroll', function(){
   var value = window.scrollY;
   scd.style.right= 0-(700-(value*1.5))  ;
 })
+ 
 
 
+// const intro = document.querySelector('#intro');
+// console.log(intro)
 
+// function animateIntro() {
+//   intro.style.left = '18.7%;';
+// }
 
+// setTimeout(animateIntro, 1000);
