@@ -173,9 +173,41 @@ header .tr2{
 
 header .tr3{
     position: absolute;
+    bottom: 184px;
+    left: 630px;
+    animation: move-picture2 5s linear infinite;
+    animation-direction: alternate;
+}
+
+
+header .tr7{
+    position: absolute;
     top: 90px;
     left: 630px;
+    animation: move-picture2 5s linear infinite;
+    animation-direction: alternate;
+}
+
+header .tr4{
+    position: absolute;
+    bottom: 220px;
+    left: 60px;
     animation: move-picture 5s linear infinite;
+    animation-direction: alternate;
+}
+header .tr5{
+    position: absolute;
+    top:  80px;
+    left: 460px;
+    animation: move-picture3 5s linear infinite;
+    animation-direction: alternate;
+}
+
+header .tr6{
+    position: absolute;
+    top: 275px;
+    left: 532px;
+    animation: move-picture3 5s linear infinite;
     animation-direction: alternate;
 }
 
