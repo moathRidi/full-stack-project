@@ -7,7 +7,7 @@ const img2 = document.querySelector('#lap2');
 
 
 
-const range = 10; // المساحة المحددة
+const range = 20; // المساحة المحددة
 
 header.addEventListener('mousemove', (event) => {
   const x = event.clientX;

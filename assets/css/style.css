@@ -241,22 +241,15 @@ header .tr6{
   
 
 .header .lap{
-    top: -10px;
-    right: 230px;
+    top: -5px;
+    right: 130px;
     z-index: 5;
+    width: 50% !important;
+   
 }
-
-.header .lap1{
-    top: 266px;
-    right: 8px;
-    z-index: 5;
-}
-
-.header .lap3{
-    top: 282px;
-    right: 212px;
-    z-index: 5;
-}
+ 
+  
+ 
 
 
 .header .para{
@@ -284,7 +277,7 @@ header .tr6{
     transform: scale(1.2);
    
 }
-.header .row  .watch  myBtn:hover i{
+.header .row  .watch  .myBtn:hover i{
     color: white !important;
 }
 
@@ -296,13 +289,47 @@ header .tr6{
     width: 100%;
     height: 80vh;   
     z-index: 4;
-   
+    overflow: hidden;
+ 
+ 
 }
+
+
+.scd::before {
+    content: "";
+    position: absolute;
+    top: -128px;
+    width: 1862px;
+    background-image: linear-gradient(#5d42d3, rgb(91, 81, 119));
+    height: 144%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .scd::after {
+    content: '';
+    position: absolute;
+    background: #fe774a;
+    inset: 5px;
+    border-radius: 500px;
+  }  
 
  
 .header h1{
     color: rgb(54, 54, 54);
-    
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
     left: 18.7%;
     top:200px;
     font-size:80px;
@@ -314,6 +341,13 @@ header .tr6{
     /* transform: translate(-50%, -50%);
   transition: all 1s; */
 }
+
+
+
+ 
+.header h1:hover {
+    transform: translateZ(10px) rotateX(-20deg) rotateY(-20deg) !important;
+  }  
 @keyframes contentLeft {
 
     0%{
@@ -350,3 +384,6 @@ header .tr6{
     background-color: #5d42d3;
     height: 100vh;
   }
+
+
+  
